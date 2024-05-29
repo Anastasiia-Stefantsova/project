@@ -5,21 +5,99 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --black: #292929;
+    --accet-green: #00b068;
+    --white: #f0f0f0;
+    --light-grey: #e4e5e6;
+    --light-accent: #bcdfd1;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Impact", sans-serif;
+    --third-family: "Montserrat", sans-serif;
 }
+.footer-color {
+  display: flex;
+}
+.footer-container {
+  border-top: 1px solid var(--light-grey);
+    padding: 40px 20px 24px 20px;
+    width: 360px;
+    height: 384px;
+}
+.footer-logo {
+  font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+
+}
+.footer-logo-part{
+  color: var(--accet-green);
+}
+.test {
+  margin-top: 32px;
+}
+
+li {
+  display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+
+}
+.nav-link{
+  font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    margin-bottom: 24px;
+}
+.footer-list {
+  margin-bottom: 40px;
+}
+.centered-text {
+  
+  justify-content: center;
+  /* width: 190px;
+  padding-left: 55px;
+  padding-right: 55px; */
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black);
+}
+
+.centered-text p {
+  display: block;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: flex;
+    gap: 40px;
+  }}
+  .footer-container{
+    width: 768px;
+    height: 216px;
+  }
+  .centered-text{
+    text-align: right;
+    white-space: nowrap;
+    
+  }
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    margin: 0 auto;
+  }}
