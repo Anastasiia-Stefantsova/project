@@ -49,7 +49,7 @@ li {
     unicode-bidi: isolate;
 
 }
-.nav-link{
+.social-media{
   font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
@@ -88,7 +88,7 @@ li {
   .centered-text p {
     display: inline;
   }
-  .nav-link {
+  .social-media {
     margin-bottom: 0;
   }
 
@@ -116,5 +116,3 @@ li {
 }
 
 }
-
-
