@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
   </head>
+  <header class="header-section">
+    <div class="container header-container">
+      <a class="heder-logo" href="./index.html"
+        >Lloyd<span class="heder-logo-part">Jefferson.</span></a
+      >
+      <div class="test">
+        <ul class="header-list list">
+          <li><a class="nav-link link" href="">About me</a></li>
+          <li><a class="nav-link link" href="">Projects</a></li>
+          <li><a class="nav-link link" href="">Contacts</a></li>
+        </ul>
+      </div>
+      <button type="button" class="mob-menu-open-btn" data-modal-open>
+        <svg width="24" height="24">
+          <use class="icon-burger" href="./img/icons.svg#icon-Vector-2"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
   <footer class="footer-section">
     <div class="container footer-container">
       <a class="footer-logo" href="./index.html"
@@ -64,8 +83,5 @@
       </div>
     </div>
   </footer>
-  <div class="container">
-    <button id="themeSwitch">Переключить тему</button>
-  </div>
   <script src="./main.js" defer type="module"></script>
 </html>
