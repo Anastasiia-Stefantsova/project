@@ -1,3 +1,16 @@
+:root {
+  font-family: Impact, 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #292929;
+  background-color: #f0f0f0;
+}
+
+body{
+  background-color: #f0f0f0;
+  color: #292929;
+}
 
 .container {
   max-width: 375px;
@@ -5,6 +18,7 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 
@@ -81,11 +95,12 @@
 }
 
 .header-container {
-  padding: 36px 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   
 }
 
@@ -94,7 +109,7 @@
   font-family: Impact, sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 1.0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #292929;
@@ -128,6 +143,75 @@
 
 }
 
+.test {
+  display: none;
+}
+
+.theme-checkbox {
+  --toggle-size: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 6.25em;
+  height: 3.125em;
+  background: linear-gradient(to right, #E4E5E6 50%, #E4E5E6 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 99em;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+  content: "";
+  width: 2.25em;
+  height: 2.25em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: linear-gradient(to right, #00B068 50%, #00B068 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
+  border-radius: 50%;
+}
+
+.theme-checkbox:checked {
+  background: linear-gradient(to right, #292929 100%, #292929 100%) no-repeat;
+  background-position: 100%;
+}
+
+.dark-theme {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+
+.light-theme {
+  background-color: #F0F0F0;
+  color: #292929;
+}
+
+.dark-theme .heder-logo,
+.dark-theme .footer-logo,
+.dark-theme .nav-link,
+.dark-theme .social-media-link,
+.dark-theme .centered-text,
+.dark-theme .footer-container {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -159,8 +243,10 @@
   .mob-menu-open-btn{
     display: none;
   }
+  .test {
+    display: flex;
+  }
 }
-
 
 @media screen and (min-width: 1440px) {
   .container {
