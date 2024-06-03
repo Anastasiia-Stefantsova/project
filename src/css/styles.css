@@ -150,7 +150,7 @@ body{
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
@@ -188,7 +188,7 @@ body{
 
 @media screen and (min-width: 1280px) {
   .container {
-      min-width: 1440px;
+      min-width: 1280px;
   }
   .footer-container {
     border-top: 1px solid #E4E5E6;
